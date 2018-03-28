@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 初始pom结构文件 -->
+    <groupId>com.sera</groupId>
+    <artifactId>blog-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>blog-core</module>
+        <module>blog-utils</module>
+        <module>blog-web</module>
+        <module>blog-api</module>
+    </modules>
+
+    <!-- 统一版本号属性配置 -->
+    <properties>
+        <project-build-sourceEncoding>UTF-8</project-build-sourceEncoding>
+        <maven.resources.plugin>2.7</maven.resources.plugin>
+        <java.compiler.plugin>3.5.1</java.compiler.plugin>
+        <java.source.version>1.7</java.source.version>
+    </properties>
+
+    <!-- 依赖 -->
+    <dependencyManagement>
+        <dependencies>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- 构建 -->
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <!-- 资源文件copy插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>${maven.resources.plugin}</version>
+                <configuration>
+                    <encoding>${project-build-sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <!-- 编译插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${java.compiler.plugin}</version>
+                <configuration>
+                    <source>${java.source.version}</source>
+                    <target>${java.source.version}</target>
+                    <encoding>${project-build-sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
