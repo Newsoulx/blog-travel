@@ -1,6 +1,6 @@
 /**
  * File：SpringbootApplication.java
- * Package：com.sera.controller.main
+ * Package：com.sera.blog.controller.main
  * Author：程金旗<chengjinqi@fang.com>
  * Date：2018-03-28 16:00
  * Copyright (C) 2016-2018 Fang.com 版权所有
@@ -11,13 +11,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * 项目入口
+ * API项目入口
  *
  * @author 程金旗 <chengjinqi@fang.com>
  * @created 2018-03-28 16:00
  */
 @SpringBootApplication
-public class SpringbootApplication {
+public class ApiApplication {
 
     /**
      * 主程序入口
@@ -25,6 +25,6 @@ public class SpringbootApplication {
      * @param args
      */
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootApplication.class, args);
+        SpringApplication.run(ApiApplication.class, args);
     }
 }

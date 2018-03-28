@@ -1,11 +1,11 @@
 /**
  * File：TestController.java
- * Package：com.sera.controller
+ * Package：com.sera.blog.controller
  * Author：程金旗<chengjinqi@fang.com>
  * Date：2018-03-28 15:44
  * Copyright (C) 2016-2018 Fang.com 版权所有
  */
-package com.sera.controller;
+package com.sera.blog.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @created 2018-03-28 15:44
  */
 @RestController
-@RequestMapping(value = "/hello")
+@RequestMapping(value = "/hello/api")
 public class TestController {
     /**
      * LOG
