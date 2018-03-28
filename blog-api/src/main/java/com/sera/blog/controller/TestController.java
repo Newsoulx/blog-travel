@@ -7,6 +7,7 @@
  */
 package com.sera.blog.controller;
 
+import com.sera.blog.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,5 +37,19 @@ public class TestController {
     public String helloWorld() {
         LOG.debug("test log");
         return "hello world!";
+    }
+
+    /**
+     * 测试获取用户json
+     *
+     * @return User
+     */
+    @GetMapping("/getUserInfo")
+    public User getUserInfo() {
+        User user = new User();
+        user.setId(1);
+        user.setUsername("chengjinqi");
+        user.setPassword("78hjsdhfkjsha9i9");
+        return user;
     }
 }
