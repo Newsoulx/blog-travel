@@ -7,6 +7,8 @@
  */
 package com.sera.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,6 +22,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/hello")
 public class TestController {
+    /**
+     * LOG
+     */
+    private static final Logger LOG = LoggerFactory.getLogger(TestController.class);
 
     /**
      * 测试跳转
@@ -28,6 +34,7 @@ public class TestController {
      */
     @GetMapping("/index")
     public String helloWorld() {
+        LOG.debug("test log");
         return "hello world!";
     }
 }
