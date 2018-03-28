@@ -1,9 +1,9 @@
 /**
  * File：TimeAspect.java
  * Package：com.sera.blog.aspect
- * Author：程金旗<chengjinqi@fang.com>
+ * Author：程金旗<chengjinqi_upc@foxmail.com>
  * Date：2018-03-28 19:01
- * Copyright (C) 2016-2018 Fang.com 版权所有
+ * Copyright (C) 2015-2018 sera.com 版权所有
  */
 package com.sera.blog.aspect;
 
@@ -21,7 +21,7 @@ import java.lang.reflect.Method;
 /**
  * 时间相关AOP
  *
- * @author 程金旗 <chengjinqi@fang.com>
+ * @author 程金旗 <chengjinqi_upc@foxmail.com>
  * @created 2018-03-28 19:01
  */
 @Aspect

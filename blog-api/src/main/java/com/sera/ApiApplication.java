@@ -1,9 +1,9 @@
 /**
  * File：SpringbootApplication.java
  * Package：com.sera.blog.controller.main
- * Author：程金旗<chengjinqi@fang.com>
+ * Author：程金旗<chengjinqi_upc@foxmail.com>
  * Date：2018-03-28 16:00
- * Copyright (C) 2016-2018 Fang.com 版权所有
+ * Copyright (C) 2015-2018 sera.com 版权所有
  */
 package com.sera;
 
@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * API项目入口
  *
- * @author 程金旗 <chengjinqi@fang.com>
+ * @author 程金旗 <chengjinqi_upc@foxmail.com>
  * @created 2018-03-28 16:00
  */
 @SpringBootApplication

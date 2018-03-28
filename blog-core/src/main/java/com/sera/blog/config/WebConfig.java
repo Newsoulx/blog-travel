@@ -1,9 +1,9 @@
 /**
  * File：WebConfig.java
  * Package：com.sera.blog.config
- * Author：程金旗<chengjinqi@fang.com>
+ * Author：程金旗<chengjinqi_upc@foxmail.com>
  * Date：2018-03-28 18:45
- * Copyright (C) 2016-2018 Fang.com 版权所有
+ * Copyright (C) 2015-2018 sera.com 版权所有
  */
 package com.sera.blog.config;
 
@@ -18,7 +18,7 @@ import org.springframework.http.converter.HttpMessageConverter;
 /**
  * 配置管理类
  *
- * @author 程金旗 <chengjinqi@fang.com>
+ * @author 程金旗 <chengjinqi_upc@foxmail.com>
  * @created 2018-03-28 18:45
  */
 @Configuration
