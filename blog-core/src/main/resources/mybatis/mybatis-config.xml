@@ -4,5 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
+        <typeAlias type="com.sera.blog.model.User" alias="user"/>
     </typeAliases>
 </configuration>

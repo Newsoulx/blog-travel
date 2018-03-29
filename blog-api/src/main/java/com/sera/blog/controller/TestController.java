@@ -47,8 +47,8 @@ public class TestController {
     @GetMapping("/getUserInfo")
     public User getUserInfo() {
         User user = new User();
-        user.setId(1);
-        user.setUsername("chengjinqi");
+        user.setId(1L);
+        user.setName("chengjinqi");
         user.setPassword("78hjsdhfkjsha9i9");
         return user;
     }
