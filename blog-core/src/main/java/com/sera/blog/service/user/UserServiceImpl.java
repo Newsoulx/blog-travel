@@ -1,9 +1,9 @@
 /**
  * File：UserServiceImpl.java
  * Package：com.sera.blog.service.impl
- * Author：程金旗<chengjinqi@fang.com>
+ * Author：程金旗<chengjinqi_upc@foxmail.com>
  * Date：2018-03-29 10:06
- * Copyright (C) 2016-2018 Fang.com 版权所有
+ * Copyright (C) 2016-2018 sera.com 版权所有
  */
 package com.sera.blog.service.user;
 
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 /**
  * 用户管理Service实现层
  *
- * @author 程金旗 <chengjinqi@fang.com>
+ * @author 程金旗 <chengjinqi_upc@foxmail.com>
  * @created 2018-03-29 10:06
  */
 @Service

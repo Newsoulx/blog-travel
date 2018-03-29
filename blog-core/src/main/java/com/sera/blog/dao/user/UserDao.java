@@ -1,9 +1,9 @@
 /**
  * File：UserDao.java
  * Package：com.sera.blog.dao
- * Author：程金旗<chengjinqi@fang.com>
+ * Author：程金旗<chengjinqi_upc@foxmail.com>
  * Date：2018-03-29 9:53
- * Copyright (C) 2016-2018 Fang.com 版权所有
+ * Copyright (C) 2016-2018 sera.com 版权所有
  */
 package com.sera.blog.dao.user;
 
@@ -12,7 +12,7 @@ import com.sera.blog.model.User;
 /**
  * 用户管理Dao层
  *
- * @author 程金旗 <chengjinqi@fang.com>
+ * @author 程金旗 <chengjinqi_upc@foxmail.com>
  * @created 2018-03-29 9:53
  */
 public interface UserDao {
