@@ -8,8 +8,10 @@
 package com.sera.blog.controller;
 
 import com.sera.blog.model.User;
+import com.sera.blog.service.user.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,6 +29,11 @@ public class TestController {
      * LOG
      */
     private static final Logger LOG = LoggerFactory.getLogger(TestController.class);
+    /**
+     * 自动注入 UserService
+     */
+    @Autowired
+    private UserService userService;
 
     /**
      * 测试跳转
@@ -36,7 +43,8 @@ public class TestController {
     @GetMapping("/index")
     public String helloWorld() {
         LOG.debug("test log");
-        return "hello world!";
+        int i = userService.addUser(new User());
+        return "hello world! " + i;
     }
 
     /**

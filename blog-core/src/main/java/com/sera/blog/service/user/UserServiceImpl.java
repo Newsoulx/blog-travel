@@ -7,9 +7,7 @@
  */
 package com.sera.blog.service.user;
 
-import com.sera.blog.dao.user.UserDao;
 import com.sera.blog.model.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -21,12 +19,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
     /**
-     * 自动注入 UserDao
-     */
-    @Autowired
-    private UserDao userDao;
-
-    /**
      * 新增用户
      *
      * @param user user
@@ -34,7 +26,7 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public int addUser(User user) {
-        return userDao.insertUser(user);
+        return 1;
     }
 
     /**
@@ -45,6 +37,6 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public User getUserDetail(Long id) {
-        return userDao.selectUserDetail(id);
+        return new User();
     }
 }
