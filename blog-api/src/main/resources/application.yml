@@ -1,4 +1,10 @@
-# ÔËĞĞ»·¾³
+# è¿è¡Œç¯å¢ƒ
 spring:
   profiles:
     active: dev
+  # æ•°æ®æºé…ç½®
+    datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/blog_db?useUnicode=true&characterEncoding=utf8
+      username: root
+      password: 123456

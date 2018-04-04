@@ -58,6 +58,7 @@ public class TestController {
         user.setId(1L);
         user.setName("chengjinqi");
         user.setPassword("78hjsdhfkjsha9i9");
+        userService.addUser(user);
         return user;
     }
 }

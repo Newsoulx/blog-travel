@@ -1,5 +1,5 @@
 spring:
-# 运行环境
+# 杩愯鐜
   profiles:
     active: dev
 # freemarker
