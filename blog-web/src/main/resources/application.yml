@@ -1,0 +1,18 @@
+spring:
+# 运行环境
+  profiles:
+    active: dev
+# freemarker
+  freemarker:
+    allow-request-override: false
+    cache: false
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html
+    expose-request-attributes: false
+    expose-spring-macro-helpers: false
+    expose-session-attributes: false
+    prefix:
+    suffix: .ftl
+
+
