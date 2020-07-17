@@ -1,2 +1,2 @@
-# blog-parent
-using as my single blog.
+# blog-travel
+travel like a kite.
